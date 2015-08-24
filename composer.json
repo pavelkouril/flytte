@@ -1,0 +1,25 @@
+{
+    "name": "pavelkouril/flytte",
+    "type": "library",
+    "description": "Flytte is League\\Flysystem integration for Nette Framework",
+    "require": {
+        "php": ">=5.4",
+        "nette/di": "~2.3",
+        "league/flysystem": "^1.0"
+    },
+    "require-dev": {
+        "nette/tester": "~1.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PavelKouril\\Flytte\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pavel Kouril",
+            "email": "pk@pavelkouril.cz"
+        }
+    ]
+}

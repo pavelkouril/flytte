@@ -1,0 +1,5 @@
+extensions:
+    flysystem: PavelKouril\Flytte\DI\FlysystemExtension
+
+flysystem:
+    default: foo
