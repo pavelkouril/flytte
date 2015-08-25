@@ -11,14 +11,18 @@ Tester\Helpers::purge(TEMP_DIR);
 
 /**
  * @param string $file
+ * @param array $parameters
  *
  * @return \Nette\DI\Container
  */
-function createContainer($file)
+function createContainer($file, array $parameters = [])
 {
     $loader = new Nette\DI\ContainerLoader(TEMP_DIR, true);
-    $class = $loader->load('', function(\Nette\DI\Compiler $compiler) use ($file) {
+    $class = $loader->load('', function(\Nette\DI\Compiler $compiler) use ($file, $parameters) {
         $compiler->addExtension('extensions', new \Nette\DI\Extensions\ExtensionsExtension());
+        if ($parameters) {
+            $compiler->addConfig(['parameters' => $parameters]);
+        }
         $compiler->loadConfig($file);
     });
     return new $class;

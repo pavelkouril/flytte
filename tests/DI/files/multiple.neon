@@ -1,0 +1,9 @@
+extensions:
+    flysystem: PavelKouril\Flytte\DI\FlysystemExtension
+
+flysystem:
+    default: foo
+    adapters:
+        local: League\Flysystem\Adapter\Local(%dir%)
+        foo: League\Flysystem\Adapter\Local(%dir%)
+        bar: League\Flysystem\Adapter\Local(%dir%)
