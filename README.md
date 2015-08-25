@@ -16,7 +16,7 @@ To use Flysystem in your Nette project, you just need to register the `PavelKour
 Like this:
 ```
 extensions:
-    flysystem: PavelKouril\\Flytte\\DI\\FlysystemExtension
+    flysystem: PavelKouril\Flytte\DI\FlysystemExtension
 ```
 
 This will enable you to configure Flysystem in the `flysystem` section, like this:
@@ -24,7 +24,7 @@ This will enable you to configure Flysystem in the `flysystem` section, like thi
 flysystem:
     default: local
     adapters:
-        local: League\\Flysystem\\Adapter\\Local("%appDir%/...")
+        local: League\Flysystem\Adapter\Local("%appDir%/...")
 
 ```
 
