@@ -6,7 +6,7 @@ This package provides [Flysystem](http://flysystem.thephpleague.com) integration
 
 You can install this package via composer
 ```
-$ composer require league/flysystem
+$ composer require pavelkouril/flytte
 ```
 
 ## Usage
