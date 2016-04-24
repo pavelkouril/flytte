@@ -45,4 +45,4 @@ By default, only the adapters included by default in Flysystem are available.
 - [League\Flysystem\Adapter\Ftp](http://flysystem.thephpleague.com/adapter/ftp/)
 - [League\Flysystem\Adapter\NullAdapter](http://flysystem.thephpleague.com/adapter/null-test/)
 
-Other adapters need to be obtained separately - packages name and their usage can be found at the [official site](http://flysystem.thephpleague.com/adapter/).
+Other adapters need to be obtained separately - packages name and their usage can be found at the [official site](http://flysystem.thephpleague.com/core-concepts/#adapters).
